@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/public'));
 
-app.post('/api/images', imageCtrl.uploadImages);
+app.post('/api/image', imageCtrl.uploadImages);
 
 app.listen(port, function() {
   console.log('Server listening on port', port);
